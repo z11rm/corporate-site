@@ -360,16 +360,9 @@ h1{
         }
       } // min-width: 550px
 }//sub_cover
-#company_contents{
+
+#contents{
     padding-top: 20px;
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 550px;
-        margin: 0 auto;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
     #main{
         h2 {
             color: #42b9d0;
@@ -391,6 +384,20 @@ h1{
             padding: 20px 0;
             color: #626262;
             font-size: 1.4rem;
+        }
+        .news_li{
+            font-size: 1.5rem;
+            li{
+                list-style: none;
+                padding-bottom: 5px; 
+                span{
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-right: 10px;
+                    color: $blue1;
+                    font-weight: bold;
+                }
+            }
         }
     }//main
     #sidebar{
@@ -432,36 +439,29 @@ h1{
     @media(min-width:550px){
         padding-top: 35px;
         padding-bottom: 70px;
-        width:100%;
-        .container {
-            width: 70%;
-        }
-        #contents{
-            padding-top: 35px;
-            padding-bottom: 70px;
-            #main {
-                padding-right: 20px;
-                h2{
-                    font-size: 20px;
-                    font-size: 2rem;
-                    padding-bottom: 20px;
-                    .company_title {
-                        margin-bottom: 0px;
-                    }
-                }
-                th {
-                    padding-right: 20px;
-                }
-                td{
-                    padding: 20px 0;
-                    color: #626262;
-                    font-size: 1.4rem;
-                }
-                .fb_iframe_widget {
-                    display: inline-block;
-                    position: relative;
+        #main {
+            padding-right: 20px;
+            h2{
+                font-size: 20px;
+                font-size: 2rem;
+                padding-bottom: 20px;
+                .company_title {
+                    margin-bottom: 0px;
                 }
             }
+            th {
+                padding-right: 20px;
+            }
+            td{
+                padding: 20px 0;
+                color: #626262;
+                font-size: 1.4rem;
+            }
+            .fb_iframe_widget {
+                display: inline-block;
+                position: relative;
+            }
         }
+    
     }//min-width:550px
-}//company_contents
+}//contents
