@@ -323,3 +323,145 @@ h1{
     margin:0;
     padding:0;
 }
+
+#sub_cover{
+    text-align:center;
+    padding:80px 0;
+    background-image: url("../images/news/sub_cover.jpg");
+    background-size:cover;
+    
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx){
+        background-image: url("../images/news/sub_cover@2x.jpg");
+    }
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0;
+        letter-spacing: 0.2rem;
+    }//h2
+    @media (min-width: 550px) {
+        text-align: left;
+        padding:80px 0;
+        background-size: cover;
+        img{
+          margin-top: 180px;
+          margin-left: 70px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 0.2rem;
+        }
+      } // min-width: 550px
+}//sub_cover
+#company_contents{
+    padding-top: 20px;
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    #main{
+        h2 {
+            color: #42b9d0;
+            border-bottom: 3px solid #42b9d0;
+            font-size: 15px;
+            @include fontsize(15);
+            font-weight: bold;
+            padding-bottom: 15px;
+            margin-bottom: 0px;
+        }
+        th{
+            padding:20px 0;
+            color:#626262;
+            font-size:1.4rem;
+            font-weight:bold;
+        }
+        td{
+            text-decoration:none;
+            padding: 20px 0;
+            color: #626262;
+            font-size: 1.4rem;
+        }
+    }//main
+    #sidebar{
+        padding-bottom: 20px;
+        .pc_sidemenu {
+            h3 {
+                color: #42b9d0;
+                font-size: 14px;
+                font-size: 1.4rem;
+                letter-spacing: 0.2rem;
+                font-weight: bold;
+                background-color: #f3f9fb;
+                padding: 15px;
+                margin-bottom: 0px;
+            }
+            li {
+                list-style: none;
+                display: block;
+                border-bottom: 1px solid #e5e5e5;
+                background-repeat: no-repeat;
+                background-position: 8px center;
+                margin-bottom: 0px;
+                padding: 10px 10px 10px 20px;
+                background-image: url(../images/news/side_arrow.png);
+                @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx){
+                background-image: url(../images/news/side_arrow@2x.png);
+            }
+                background-size: 4px 8px;
+            }
+            @media(max-width: 550px){
+            display:none;
+        }
+        .fb {
+            display: inline-block;
+            position: relative;
+        }
+        }
+    }//sidebar
+    @media(min-width:550px){
+        padding-top: 35px;
+        padding-bottom: 70px;
+        width:100%;
+        .container {
+            width: 70%;
+        }
+        #contents{
+            padding-top: 35px;
+            padding-bottom: 70px;
+            #main {
+                padding-right: 20px;
+                h2{
+                    font-size: 20px;
+                    font-size: 2rem;
+                    padding-bottom: 20px;
+                    .company_title {
+                        margin-bottom: 0px;
+                    }
+                }
+                th {
+                    padding-right: 20px;
+                }
+                td{
+                    padding: 20px 0;
+                    color: #626262;
+                    font-size: 1.4rem;
+                }
+                .fb_iframe_widget {
+                    display: inline-block;
+                    position: relative;
+                }
+            }
+        }
+    }//min-width:550px
+}//company_contents
